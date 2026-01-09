@@ -12,7 +12,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 os.makedirs("output", exist_ok=True)
 
 # Load dataset
-data = pd.read_csv("C:\Users\nanda\OneDrive\Desktop\SEM-8\CSS426 Machine Learning Operations(MLOps) Batch1\LAB\winequality.csv", sep=';')
+data = pd.read_csv("dataset/winequality.csv", sep=';')
 
 # Split features and target
 X = data.drop("quality", axis=1)
